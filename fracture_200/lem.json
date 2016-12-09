@@ -26,6 +26,13 @@
         "type" : "restrain",
 	"node_set" : "-z",
         "restrain" : [false, false, true, false, false, false] 
+      },     
+      {
+        "type" : "pressure",
+	"node_set" : "+z",
+        "pressure" : 500,
+        "dir" : 2,
+        "face" : 5
       }
     ]
   },
@@ -42,6 +49,8 @@
     }
   },
   "solver" : {
+    "solver" : "CG_MKL",
+    "matrix_assembler" : "Eigen",
     "min_iterations" : 100,
     "max_iterations" : 10000,
     "tolerance" : 2.5E-03

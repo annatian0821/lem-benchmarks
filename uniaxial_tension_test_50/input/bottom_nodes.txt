@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccd59971d78c6c5da8650b161721935593652699e0e9554b192364f643f4bc97
-size 11941
-=======
 48019
 81130
 27016
@@ -2030,4 +2025,3 @@ size 11941
 1112
 82767
 43479
->>>>>>> master
