@@ -8,12 +8,18 @@
     "bounding_box" : [0.0, 50.0, 0.0, 50.0, 0.0, 50.0],
     "element" : {
       "type" : "Beam",
-      "Emicro" : 2.0E+7,
       "alpha" : 1.0,
       "beta"  : 1.0,
       "tensile_strength" : 2000,
       "cohesion" : 2000,
-      "friction_angle" : 0.0
+      "friction_angle" : 0.0,
+      "Stiffness" : { 
+        "Emicro" : 2.0E+7,
+        "Distribution" : "normal", 
+        "Sigma" : 0.05,
+        "Mu" : 1.0, 
+        "Min" : 0.2
+      }
     },
     "boundary_conditions" : [
       {
@@ -38,7 +44,7 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],	
-      "max_steps" : 5,
+      "max_steps" : 10000,
       "max_breakable_lattice" : 20
     }
   },
