@@ -13,12 +13,12 @@
       "tensile_strength" : 2000,
       "cohesion" : 2000,
       "friction_angle" : 0.0,
-      "Stiffness" : { 
+      "stiffness" : { 
         "Emicro" : 2.0E+7,
-        "Distribution" : "normal", 
-        "Sigma" : 0.05,
-        "Mu" : 1.0, 
-        "Min" : 0.2
+        "distribution" : "normal", 
+        "sigma" : 0.05,
+        "mu" : 1.0, 
+        "min_threshold" : 0.2
       }
     },
     "boundary_conditions" : [
@@ -44,7 +44,7 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],	
-      "max_steps" : 10000,
+      "max_steps" : 5,
       "max_breakable_lattice" : 20
     }
   },
