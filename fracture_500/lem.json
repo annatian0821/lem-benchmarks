@@ -56,7 +56,6 @@
     }
   },
   "solver" : {
-    "solver" : "CG_MKL",
     "max_iterations" : 10000,
     "tolerance" : 2.5E-03
   },
