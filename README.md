@@ -9,3 +9,5 @@ Benchmark files for [LEM code](https://github.com/cb-geo/lem)
 * [Uniaxial tension test with fracture (200,000 nodes)](https://github.com/cb-geo/lem-benchmarks/tree/develop/fracture_200)
 
 * [Uniaxial tension test with fracture (500,000 nodes)](https://github.com/cb-geo/lem-benchmarks/tree/develop/fracture_500)
+
+* [Tension test with notch](https://github.com/cb-geo/lem-benchmarks/tree/develop/notch)
