@@ -6,6 +6,7 @@
       "elements": "input/elements.txt",
       "fracture_node_pairs": "input/fracture.txt"
     },
+    "bounding_box" : [0.0, 0.75, 0.0, 0.75, 0.0, 0.13],
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
