@@ -8,12 +8,12 @@
     "bounding_box" : [0.0, 50.0, 0.0, 50.0, 0.0, 50.0],
     "element" : {
       "type" : "Beam",
-      "Emicro" : 2.0E+7,
       "alpha" : 1.0,
       "beta"  : 1.0,
       "tensile_strength" : 2000,
       "cohesion" : 2000,
       "friction_angle" : 0.0,
+      "Emicro" : 2.0E+7,
       "distribution" : {
         "type" : "uniform", 
         "sigma" : 0.05,
@@ -21,39 +21,35 @@
         "min_threshold" : 0.2
       }
     },
-    "node_sets" : {
-      "top" : "input/top_nodes.txt",
-      "bottom" : "input/bottom_nodes.txt"
-    },
     "boundary_conditions" : [
       {
         "type" : "restrain",
-	"node_set" : "bottom",
+        "node_set" : "-z",
         "restrain" : [false, false, true, false, false, false] 
       },     
       {
         "type" : "displacement",
-	"node_set" : "top",
-        "disp" : [0.0, 0.0, 0.00425, 0.0, 0.0, 0.0]
+        "node_set" : "+z",
+        "disp" : [0.0, 0.0, 0.425, 0.0, 0.0, 0.0]
       }
     ]
   },
   "analysis" : {
     "type" : "displacement",
     "loading" : {
-      "node_set" : "top",
-      "disp" : [0.0, 0.0, 0.00425, 0.0, 0.0, 0.0],
+      "node_set" : "+z",
+      "disp" : [0.0, 0.0, 0.425, 0.0, 0.0, 0.0],
       "dir" : 2,
       "face" : 5,
-      "strain_node_set" : ["top", "bottom"],	
+      "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 5,
-      "max_breakable_lattice" : 20
+      "max_threshold_lattices" : 20,
+      "max_breakable_lattices" : 20
     }
   },
   "solver" : {
-    "min_iterations" : 100,
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-03
+    "tolerance" : 2.5E-05
   },
   "post_processing" : {
     "output_steps" : 1,
