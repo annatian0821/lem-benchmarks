@@ -15,7 +15,7 @@
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "type" : "uniform", 
+        "type" : "normal", 
         "sigma" : 0.05,
         "mu" : 1.0, 
         "min_threshold" : 0.2
@@ -26,11 +26,6 @@
         "type" : "restrain",
         "node_set" : "-z",
         "restrain" : [false, false, true, false, false, false] 
-      },     
-      {
-        "type" : "displacement",
-        "node_set" : "+z",
-        "disp" : [0.0, 0.0, 0.425, 0.0, 0.0, 0.0]
       }
     ]
   },
@@ -38,7 +33,7 @@
     "type" : "displacement",
     "loading" : {
       "node_set" : "+z",
-      "disp" : [0.0, 0.0, 0.425, 0.0, 0.0, 0.0],
+      "disp" : [0.0, 0.0, 4.315E-03, 0.0, 0.0, 0.0],
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
@@ -49,7 +44,7 @@
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-05
+    "tolerance" : 1.0E-5
   },
   "post_processing" : {
     "output_steps" : 1,
