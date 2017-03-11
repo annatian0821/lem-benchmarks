@@ -15,7 +15,7 @@
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "type" : "uniform", 
+        "type" : "normal", 
         "sigma" : 0.05,
         "mu" : 1.0, 
         "min_threshold" : 0.2
