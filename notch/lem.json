@@ -17,7 +17,7 @@
       "Emicro" : 2.0E+7,
       "distribution" : {
         "type" : "normal", 
-        "sigma" : 0.05,
+        "sigma" : 0.1,
         "mu" : 1.0, 
         "min_threshold" : 0.2
       }
@@ -27,13 +27,6 @@
         "type" : "restrain",
 	"node_set" : "-y",
         "restrain" : [false, true, false, false, false, false] 
-      },     
-      {
-        "type" : "pressure",
-	"node_set" : "+y",
-        "pressure" : 100,
-        "dir" : 1,
-        "face" : 3
       }
     ]
   },
@@ -41,7 +34,7 @@
     "type" : "displacement",
     "loading" : {
       "node_set" : "+y",
-      "disp" : [0.0, 4.315E-03, 0.0, 0.0, 0.0, 0.0],
+      "disp" : [0.0, 1.0E-05, 0.0, 0.0, 0.0, 0.0],
       "dir" : 1,
       "face" : 3,
       "strain_node_set" : ["+y", "-y"],    
