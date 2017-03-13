@@ -8,7 +8,7 @@
 lc = 0.01;
 
 // Edge length
-el = 0.001;
+el = 0.005;
 
 // 8 corner points of a cube
 Point(1) = {0, 0, 0, lc};
@@ -25,6 +25,7 @@ Point(9) = {0.0+el, 0.375, 0.0+el, lc};
 Point(10) = {0.13, 0.375, 0.0+el, lc};
 Point(11) = {0.13, 0.375, 0.13-el, lc};
 Point(12) = {0.0+el, 0.375, 0.13-el, lc};
+
 
 // 4 point define square crack # 2 near the boundary 
 Point(13) = {0.62, 0.375, 0.0+el, lc};
@@ -78,13 +79,19 @@ Plane Surface(5) = {5};
 Plane Surface(6) = {6};
 
 Plane Surface(7) = {7}; 
-Plane Surface(8) = {8}; 
+Plane Surface(8) = {8};
+
+
+// Line{13,17} In Surface{1};
+// Line{18} In Surface{3};
+// Line{16} In Surface{5};
+// Line{15} In Surface{6};
 
 Surface Loop(1) = {1,2,3,4,5,6};
 Volume(1) = {1};
 
 Surface{7} In Volume{1};
-Surface{8} In Volume{1};  
+Surface{8} In Volume{1};
 
 
 BottomBottomLine = 101;

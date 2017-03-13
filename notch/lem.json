@@ -3,7 +3,6 @@
     "id": 0,
     "input_files": {
       "nodes": "input/nodes.txt",
-      "elements": "input/elements.txt",
       "fracture_node_pairs": "input/fracture.txt"
     },
     "bounding_box" : [0.0, 0.75, 0.0, 0.75, 0.0, 0.13],
@@ -34,13 +33,13 @@
     "type" : "displacement",
     "loading" : {
       "node_set" : "+y",
-      "disp" : [0.0, 1.0E-05, 0.0, 0.0, 0.0, 0.0],
+      "disp" : [0.0, 1.0E-06, 0.0, 0.0, 0.0, 0.0],
       "dir" : 1,
       "face" : 3,
       "strain_node_set" : ["+y", "-y"],    
       "max_steps" : 1000,
-      "max_threshold_lattices" : 20,
-      "max_breakable_lattices" : 20
+      "max_threshold_lattices" : 25,
+      "max_breakable_lattices" : 25
     }
   },
   "solver" : {
