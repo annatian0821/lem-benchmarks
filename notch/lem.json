@@ -6,7 +6,7 @@
       "elements": "input/elements.txt",
       "fracture_node_pairs": "input/fracture.txt"
     },
-    "bounding_box" : [0.0, 0.75, 0.0, 0.75, 0.0, 0.13],
+    "bounding_box" : [0.0, 75, 0.0, 13, 0.0, 75],
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
@@ -25,22 +25,22 @@
     "boundary_conditions" : [
       {
         "type" : "restrain",
-	"node_set" : "-y",
-        "restrain" : [false, true, false, false, false, false] 
+	"node_set" : "-z",
+        "restrain" : [false, false, true, false, false, false] 
       }
     ]
   },
   "analysis" : {
     "type" : "displacement",
     "loading" : {
-      "node_set" : "+y",
-      "disp" : [0.0, 1.0E-05, 0.0, 0.0, 0.0, 0.0],
+      "node_set" : "+z",
+      "disp" : [0.0, 0.0, 1.0E-06, 0.0, 0.0, 0.0],
       "dir" : 1,
       "face" : 3,
-      "strain_node_set" : ["+y", "-y"],    
+      "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
-      "max_threshold_lattices" : 20,
-      "max_breakable_lattices" : 20
+      "max_threshold_lattices" : 25,
+      "max_breakable_lattices" : 25
     }
   },
   "solver" : {
