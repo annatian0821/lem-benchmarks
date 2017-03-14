@@ -35,8 +35,8 @@
     "loading" : {
       "node_set" : "+z",
       "disp" : [0.0, 0.0, 1.0E-06, 0.0, 0.0, 0.0],
-      "dir" : 1,
-      "face" : 3,
+      "dir" : 2,
+      "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
       "max_threshold_lattices" : 25,
