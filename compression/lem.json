@@ -9,9 +9,9 @@
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
-      "beta"  : 0.3,
-      "tensile_strength" : 2000,
-      "cohesion" : 2000,
+      "beta"  : 1.0,
+      "tensile_strength" : 1000,
+      "cohesion" : 4000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
@@ -43,21 +43,21 @@
     "type" : "displacement",
     "loading" : {
       "node_set" : "+z",
-      "disp" : [0.0, 0.0, -4.315E-03, 0.0, 0.0, 0.0],
+      "disp" : [0.0, 0.0, -5.0E-03, 0.0, 0.0, 0.0],
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 5,
+      "max_steps" : 1000,
       "max_threshold_lattices" : 20,
       "max_breakable_lattices" : 20
     }
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-03
+    "tolerance" : 1.0E-04
   },
   "post_processing" : {
-    "output_steps" : 100,
+    "output_steps" : 10,
     "results_path" : "results/"
   }
 }
