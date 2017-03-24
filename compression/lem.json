@@ -47,14 +47,14 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 1000,
+      "max_steps" : 5000,
       "max_threshold_lattices" : 20,
       "max_breakable_lattices" : 20
     }
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 1.0E-04
+    "tolerance" : 5.0E-04
   },
   "post_processing" : {
     "output_steps" : 10,
