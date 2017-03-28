@@ -49,6 +49,7 @@
   },
   "post_processing" : {
     "output_steps" : 5,
-    "results_path" : "results/"
+    "results_path" : "results/",
+    "nodes" : [0, 242]
   }
 }
