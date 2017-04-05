@@ -1,4 +1,5 @@
 {
+  "title": "Uniaxial stress controlled tension test 50x50x50 normal distribution",
   "mesh": {
     "id": 0,
     "input_files": {

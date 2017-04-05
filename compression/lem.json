@@ -1,4 +1,5 @@
 {
+  "title": "Uniaxial displacement controlled compression test 40x3x80 normal distribution",
   "mesh": {
     "id": 0,
     "input_files": {
