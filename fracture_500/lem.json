@@ -17,6 +17,7 @@
       "type" : "Beam",
       "alpha" : 1.0,
       "beta"  : 1.0,
+      "gamma" : 1.0,
       "tensile_strength" : 2000,
       "cohesion" : 2000,
       "friction_angle" : 0.0,

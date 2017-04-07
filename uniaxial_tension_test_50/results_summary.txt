@@ -1,6 +1,0 @@
-step 	 stress 	 strain 	 nthreshold_lattices 	 nthreshold_lattices 	 nunstable_nodes 	 accum_strain_energy
-0	1700	8.51412e-05	0	0	0	0
-1	1865.06	9.34079e-05	10	10	0	0.63398
-2	1865.06	9.34167e-05	5	5	0	0.788405
-3	1855.84	9.29567e-05	1	1	0	0.822976
-4	1888.15	9.45758e-05	8	8	0	1.43032
