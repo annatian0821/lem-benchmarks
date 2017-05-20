@@ -43,6 +43,7 @@
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 5,
+      "nreassemble_stiffness": 1,
       "max_threshold_lattices" : 20,
       "max_breakable_lattices" : 20
     }
