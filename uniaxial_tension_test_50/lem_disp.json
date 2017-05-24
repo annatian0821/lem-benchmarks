@@ -10,7 +10,7 @@
       "type" : "Beam",
       "alpha" : 0.3,
       "beta"  : 1.0,
-      "gamma" : 0.0,  
+      "gamma" : 0.3,
       "tensile_strength" : 1000,
       "cohesion" : 4000,
       "friction_angle" : 0.0,
@@ -21,6 +21,10 @@
         "mu" : 1.0, 
         "min_threshold" : 0.2
       }
+    },
+    "reconnection" : {
+      "status" : true,
+      "threshold": 1.0E-03
     },
     "boundary_conditions" : [
       {
@@ -38,14 +42,14 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 2000,
+      "max_steps" : 10000,
       "nreassemble_stiffness": 10,
       "max_threshold_lattices" : 100,
       "max_breakable_lattices" : 25
     }
   },
   "solver" : {
-    "max_iterations" : 10000,
+    "max_iterations" : 2000,
     "tolerance" : 1.0E-5
   },
   "post_processing" : {
