@@ -61,6 +61,7 @@
   },
   "post_processing" : {
     "output_steps" : 100,
-    "results_path" : "results/"
+    "results_path" : "results/",
+    "write_lattices" :  false
   }
 }
