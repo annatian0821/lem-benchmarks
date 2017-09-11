@@ -45,8 +45,8 @@
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 2500,
       "nreassemble_stiffness": 10,
-      "max_threshold_lattices" : 500,
-      "max_breakable_lattices" : 25
+      "max_threshold_elements" : 500,
+      "max_breakable_elements" : 25
     }
   },
   "solver" : {
