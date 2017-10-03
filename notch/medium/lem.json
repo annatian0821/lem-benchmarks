@@ -14,12 +14,12 @@
       "beta"  : 0.3,
       "gamma" : 1.0,
       "tensile_strength" : 2000,
-      "cohesion" : 2000,
+      "cohesion" : 4000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "type" : "normal", 
-        "sigma" : 0.1,
+        "type" : "lognorm", 
+        "sigma" : 1.0,
         "mu" : 1.0, 
         "min_threshold" : 0.2
       }
@@ -41,7 +41,8 @@
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
-      "max_threshold_elements" : 25,
+      "nreassemble_stiffness": 10,
+      "max_threshold_elements" : 100,
       "max_breakable_elements" : 25
     }
   },
@@ -50,8 +51,8 @@
     "tolerance" : 2.5E-03
   },
   "post_processing" : {
-    "output_steps" : 5,
+    "output_steps" : 20,
     "results_path" : "results/",
-    "nodes" : [0, 242]
+    "write_elements" :  true
   }
 }
