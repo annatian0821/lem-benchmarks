@@ -11,10 +11,10 @@
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
-      "beta"  : 0.3,
-      "gamma" : 1.0,
+      "beta"  : 1.0,
+      "gamma" : 0.0,
       "tensile_strength" : 2000,
-      "cohesion" : 4000,
+      "cohesion" : 2000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
@@ -42,8 +42,8 @@
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
       "nreassemble_stiffness": 10,
-      "max_threshold_elements" : 100,
-      "max_breakable_elements" : 25
+      "max_threshold_elements" : 20,
+      "max_breakable_elements" : 20
     }
   },
   "solver" : {
