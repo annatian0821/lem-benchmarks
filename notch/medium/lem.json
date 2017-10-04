@@ -18,7 +18,7 @@
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "type" : "lognorm", 
+        "type" : "normal", 
         "sigma" : 1.0,
         "mu" : 1.0, 
         "min_threshold" : 0.2
@@ -28,7 +28,7 @@
       {
         "type" : "restrain",
 	"node_set" : "-z",
-        "restrain" : [false, false, true, false, false, false] 
+        "restrain" : [true, true, true, false, false, false] 
       }
     ]
   },
@@ -40,9 +40,9 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 1000,
+      "max_steps" : 5000,
       "nreassemble_stiffness": 10,
-      "max_threshold_elements" : 20,
+      "max_threshold_elements" : 100,
       "max_breakable_elements" : 20
     }
   },
