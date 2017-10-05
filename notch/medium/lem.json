@@ -1,5 +1,5 @@
 {
-  "title": "Notch 75x13x75 medium resolution normal distribution",
+  "title": "Notch 75x13x75 fine resolution normal distribution",
   "mesh": {
     "id": 0,
     "input_files": {
@@ -11,18 +11,22 @@
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
-      "beta"  : 1.0,
-      "gamma" : 0.0,
-      "tensile_strength" : 2000,
-      "cohesion" : 2000,
+      "beta"  : 0.3,
+      "gamma" : 1.0,
+      "tensile_strength" : 19.53,
+      "cohesion" : 19.53,
       "friction_angle" : 0.0,
-      "Emicro" : 2.0E+7,
+      "Emicro" : 71.42E+3,
       "distribution" : {
         "type" : "normal", 
-        "sigma" : 1.0,
+        "sigma" : 0.1,
         "mu" : 1.0, 
         "min_threshold" : 0.2
       }
+    },
+    "reconnection" : {
+      "status" : false,
+      "threshold": 0.0
     },
     "boundary_conditions" : [
       {
@@ -41,7 +45,6 @@
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
-      "nreassemble_stiffness": 10,
       "max_threshold_elements" : 100,
       "max_breakable_elements" : 20
     }
@@ -52,7 +55,8 @@
   },
   "post_processing" : {
     "output_steps" : 20,
+    "write_elements" : true,
     "results_path" : "results/",
-    "write_elements" :  true
+    "nodes" : [0, 1012]
   }
 }
