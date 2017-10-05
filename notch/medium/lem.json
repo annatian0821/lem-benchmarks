@@ -40,7 +40,7 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 1500,
+      "max_steps" : 1000,
       "nreassemble_stiffness": 10,
       "max_threshold_elements" : 100,
       "max_breakable_elements" : 20

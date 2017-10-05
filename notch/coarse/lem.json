@@ -11,14 +11,14 @@
     "element" : {
       "type" : "Beam",
       "alpha" : 0.3,
-      "beta"  : 0.3,
-      "gamma" : 1.0,
+      "beta"  : 1.0,
+      "gamma" : 0.0,
       "tensile_strength" : 2000,
-      "cohesion" : 4000,
+      "cohesion" : 2000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "type" : "lognorm", 
+        "type" : "normal", 
         "sigma" : 1.0,
         "mu" : 1.0, 
         "min_threshold" : 0.2
@@ -28,7 +28,7 @@
       {
         "type" : "restrain",
 	"node_set" : "-z",
-        "restrain" : [false, false, true, false, false, false] 
+        "restrain" : [true, true, true, false, false, false] 
       }
     ]
   },
@@ -43,7 +43,7 @@
       "max_steps" : 1000,
       "nreassemble_stiffness": 10,
       "max_threshold_elements" : 100,
-      "max_breakable_elements" : 25
+      "max_breakable_elements" : 20
     }
   },
   "solver" : {
