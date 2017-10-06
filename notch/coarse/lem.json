@@ -13,10 +13,10 @@
       "alpha" : 0.3,
       "beta"  : 0.3,
       "gamma" : 1.0,
-      "tensile_strength" : 19.53,
-      "cohesion" : 19.53,
+      "tensile_strength" : 1953,
+      "cohesion" : 1953,
       "friction_angle" : 0.0,
-      "Emicro" : 71.42E+3,
+      "Emicro" : 7.142E+7,
       "distribution" : {
         "type" : "normal", 
         "sigma" : 0.1,
@@ -51,7 +51,7 @@
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-03
+    "tolerance" : 1.0E-05
   },
   "post_processing" : {
     "output_steps" : 20,
