@@ -42,7 +42,7 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 10000,
+      "max_steps" : 2000,
       "nreassemble_stiffness": 10,
       "max_threshold_elements" : 100,
       "max_breakable_elements" : 25
@@ -53,8 +53,8 @@
     "tolerance" : 1.0E-5
   },
   "post_processing" : {
-    "output_steps" : 100,
+    "output_steps" : 25,
     "results_path" : "results/",
-    "write_elements" :  false
+    "write_elements" :  true
   }
 }
