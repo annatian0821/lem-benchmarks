@@ -1,0 +1,62 @@
+{
+  "title": "Notch 75x13x75 fine resolution normal distribution",
+  "mesh": {
+    "id": 0,
+    "input_files": {
+      "nodes": "input/nodes.txt",
+      "elements": "input/elements.txt",
+      "fracture_node_pairs": "input/fracture.txt"
+    },
+    "bounding_box" : [0.0, 75, 0.0, 13, 0.0, 75],
+    "element" : {
+      "type" : "Beam",
+      "alpha" : 0.3,
+      "beta"  : 0.3,
+      "gamma" : 1.0,
+      "tensile_strength" : 1953,
+      "cohesion" : 1953,
+      "friction_angle" : 0.0,
+      "Emicro" : 7.142E+7,
+      "distribution" : {
+        "type" : "normal", 
+        "sigma" : 0.1,
+        "mu" : 1.0, 
+        "min_threshold" : 0.2
+      }
+    },
+    "reconnection" : {
+      "status" : false,
+      "threshold": 0.0
+    },
+    "boundary_conditions" : [
+      {
+        "type" : "restrain",
+	"node_set" : "-z",
+        "restrain" : [true, true, true, false, false, false] 
+      }
+    ]
+  },
+  "analysis" : {
+    "type" : "displacement",
+    "loading" : {
+      "node_set" : "+z",
+      "disp" : [0.0, 0.0, 1.0E-06, 0.0, 0.0, 0.0],
+      "dir" : 2,
+      "face" : 5,
+      "strain_node_set" : ["+z", "-z"],    
+      "max_steps" : 1000,
+      "max_threshold_elements" : 100,
+      "max_breakable_elements" : 20
+    }
+  },
+  "solver" : {
+    "max_iterations" : 10000,
+    "tolerance" : 1.0E-05
+  },
+  "post_processing" : {
+    "output_steps" : 20,
+    "write_elements" : true,
+    "results_path" : "results/",
+    "nodes" : [0, 242]
+  }
+}
