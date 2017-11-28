@@ -18,7 +18,8 @@
       "friction_angle" : 0.0,
       "Emicro" : 7.142E+7,
       "distribution" : {
-        "type" : "normal", 
+        "file" : "input/elements_scaling.txt",
+        "type" : "normal",
         "sigma" : 0.1,
         "mu" : 1.0, 
         "min_threshold" : 0.2
@@ -45,7 +46,8 @@
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 1000,
-      "max_threshold_elements" : 100,
+      "nreassemble_stiffness": 25,  
+      "max_threshold_elements" : 20,
       "max_breakable_elements" : 20
     }
   },
