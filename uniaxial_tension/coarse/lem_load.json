@@ -9,11 +9,11 @@
     "bounding_box" : [0.0, 50.0, 0.0, 50.0, 0.0, 50.0],
     "element" : {
       "type" : "Beam",
-      "alpha" : 0.3,
+      "alpha" : 1.0,
       "beta"  : 1.0,
-      "gamma" : 0.3,
-      "tensile_strength" : 1000,
-      "cohesion" : 4000,
+      "gamma" : 1.0,
+      "tensile_strength" : 2000,
+      "cohesion" : 2000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
@@ -35,7 +35,7 @@
       {
         "type" : "pressure",
 	"node_set" : "+z",
-        "pressure" : 500,
+        "pressure" : 1700,
         "dir" : 2,
         "face" : 5
       }
@@ -45,19 +45,19 @@
     "type" : "pressure",
     "loading" : {
       "node_set" : "+z",
-      "pressure" : 500,
+      "pressure" : 1700,
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],	
-      "max_steps" : 2500,
+      "max_steps" : 5,
       "nreassemble_stiffness": 10,  
-      "max_threshold_elements" : 100,
+      "max_threshold_elements" : 20,
       "max_breakable_elements" : 20
     }
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 1.0E-5
+    "tolerance" : 2.5E-03
   },
   "post_processing" : {
     "output_steps" : 100,
