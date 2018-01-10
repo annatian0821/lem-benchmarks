@@ -16,6 +16,7 @@
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
+        "file" : "input/stiffness_scaling.txt",
         "type" : "lognorm", 
         "sigma" : 1.0,
         "mu" : 1.0, 
@@ -42,9 +43,9 @@
       "dir" : 2,
       "face" : 5,
       "strain_node_set" : ["+z", "-z"],    
-      "max_steps" : 2000,
-      "nreassemble_stiffness": 10,
-      "max_threshold_elements" : 100,
+      "max_steps" : 5000,
+      "nreassemble_stiffness": 1,
+      "max_threshold_elements" : 25,
       "max_breakable_elements" : 25
     }
   },
