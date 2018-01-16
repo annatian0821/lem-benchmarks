@@ -52,7 +52,7 @@
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-03
+    "tolerance" : 1.0E-5
   },
   "post_processing" : {
     "output_steps" : 20,
