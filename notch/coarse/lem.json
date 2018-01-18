@@ -1,5 +1,5 @@
 {
-  "title": "Notch 75x13x75 fine resolution normal distribution",
+  "title": "Notch 75x13x75 coarse resolution normal distribution",
   "mesh": {
     "id": 0,
     "input_files": {
@@ -13,8 +13,8 @@
       "alpha" : 0.3,
       "beta"  : 0.3,
       "gamma" : 1.0,
-      "tensile_strength" : 1953,
-      "cohesion" : 1953,
+      "tensile_strength" : 19530,
+      "cohesion" : 19530,
       "friction_angle" : 0.0,
       "Emicro" : 7.142E+7,
       "distribution" : {
