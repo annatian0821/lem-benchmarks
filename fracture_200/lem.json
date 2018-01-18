@@ -30,41 +30,38 @@
         "min_threshold" : 0.2
       }
     },
+    "reconnection" : {
+      "status" : true,
+      "threshold": 1.0E-03
+    },
     "boundary_conditions" : [
       {
         "type" : "restrain",
-	"node_set" : "-z",
-        "restrain" : [false, false, true, false, false, false] 
-      },     
-      {
-        "type" : "pressure",
-	"node_set" : "+z",
-        "pressure" : 500,
-        "dir" : 2,
-        "face" : 5
+        "node_set" : "-z",
+        "restrain" : [true, true, true, false, false, false] 
       }
     ]
   },
   "analysis" : {
-    "type" : "pressure",
+    "type" : "displacement",
     "loading" : {
       "node_set" : "+z",
-      "pressure" : 500,
+      "disp" : [0.0, 0.0, 1.0E-04, 0.0, 0.0, 0.0],
       "dir" : 2,
       "face" : 5,
-      "strain_node_set" : ["+z", "-z"],	
+      "strain_node_set" : ["+z", "-z"],    
       "max_steps" : 5000,
       "nreassemble_stiffness": 10,
-      "max_threshold_elements" : 20,
-      "max_breakable_elements" : 20
+      "max_threshold_elements" : 25,
+      "max_breakable_elements" : 25
     }
   },
   "solver" : {
     "max_iterations" : 10000,
-    "tolerance" : 2.5E-03
+    "tolerance" : 1.0E-05
   },
   "post_processing" : {
     "output_steps" : 100,
-    "results_path" : "results/"
+    "results_path" : "results/"      
   }
 }
