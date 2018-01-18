@@ -15,14 +15,15 @@
    "bounding_box" : [0.0, 100.0, 0.0, 100.0, 0.0, 100.0],
     "element" : {
       "type" : "Beam",
-      "alpha" : 1.0,
-      "beta"  : 1.0,
+      "alpha" : 0.3,
+      "beta"  : 0.3,
       "gamma" : 1.0,
       "tensile_strength" : 2000,
       "cohesion" : 2000,
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
+        "file" : "input/stiffness_scaling.txt",
         "type" : "normal", 
         "sigma" : 0.05,
         "mu" : 1.0, 
