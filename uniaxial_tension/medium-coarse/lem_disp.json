@@ -3,7 +3,7 @@
     "id": 0,
     "input_files": {
       "nodes": "input/nodes.txt",
-      "#elements": "input/elements.txt"
+      "elements": "input/elements.txt"
     },
     "bounding_box" : [0.0, 50.0, 0.0, 50.0, 0.0, 50.0],
     "element" : {
@@ -16,7 +16,7 @@
       "friction_angle" : 0.0,
       "Emicro" : 2.0E+7,
       "distribution" : {
-        "#file" : "input/stiffness_scaling.txt",
+        "file" : "input/elements_scaling.txt",
         "type" : "lognorm", 
         "sigma" : 1.0,
         "mu" : 1.0, 
