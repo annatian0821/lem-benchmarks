@@ -24,7 +24,7 @@
       }
     },
     "reconnection" : {
-      "status" : true,
+      "status" : false,
       "threshold": 1.0E-03
     },
     "boundary_conditions" : [
@@ -54,7 +54,7 @@
     "tolerance" : 1.0E-5
   },
   "post_processing" : {
-    "output_steps" : 25,
+    "output_steps" : 10,
     "results_path" : "results/",
     "write_elements" :  true
   }
